@@ -2,3 +2,7 @@ baseURL = 'https://xiaowenjictf.github.io/'
 languageCode = 'en-us'
 title = "xiaowenji's blog"
 theme = "reimu"
+
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
