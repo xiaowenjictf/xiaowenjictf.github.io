@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://xiaowenjictf.github.io/categories/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/crypto/</loc>
+    <loc>https://xiaowenjictf.github.io/tags/crypto/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ctf/</loc>
+    <loc>https://xiaowenjictf.github.io/categories/ctf/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://xiaowenjictf.github.io/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/htb/</loc>
+    <loc>https://xiaowenjictf.github.io/categories/htb/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/nahamcom/</loc>
+    <loc>https://xiaowenjictf.github.io/post/nahamcom/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/paper/</loc>
+    <loc>https://xiaowenjictf.github.io/post/paper/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://xiaowenjictf.github.io/tags/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/wordpress/</loc>
+    <loc>https://xiaowenjictf.github.io/tags/wordpress/</loc>
     <lastmod>2025-09-12T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blockchain/</loc>
+    <loc>https://xiaowenjictf.github.io/tags/blockchain/</loc>
     <lastmod>2025-09-11T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/ethernaut/</loc>
+    <loc>https://xiaowenjictf.github.io/post/ethernaut/</loc>
     <lastmod>2025-09-11T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://xiaowenjictf.github.io/about/</loc>
     <lastmod>2025-06-09T20:12:52+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://xiaowenjictf.github.io/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/friend/</loc>
+    <loc>https://xiaowenjictf.github.io/friend/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
   </url>
 </urlset>

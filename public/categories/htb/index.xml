@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Htb on xiaowenji&#39;s blog</title>
-    <link>http://localhost:1313/categories/htb/</link>
+    <link>https://xiaowenjictf.github.io/categories/htb/</link>
     <description>Recent content from xiaowenji&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Fri, 12 Sep 2025 12:00:00 -0400</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/categories/htb/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://xiaowenjictf.github.io/categories/htb/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Paper</title>
-      <link>http://localhost:1313/post/paper/</link>
+      <link>https://xiaowenjictf.github.io/post/paper/</link>
       <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
-      <guid>http://localhost:1313/post/paper/</guid>
+      <guid>https://xiaowenjictf.github.io/post/paper/</guid>
       <description>
         <![CDATA[<h1>Paper</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
@@ -59,7 +59,7 @@ Web (port 80)
 
 <p>Reading the server content, We found a message that provided a hint indicating a possible vulnerability.</p>
         
-        <hr><p>Published on 2025-09-12 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
+        <hr><p>Published on 2025-09-12 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
       </description>
       
         <category>htb</category>
