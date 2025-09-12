@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>キャプチャー・ザ・フラッグ on xiaowenji&#39;s blog</title>
+    <link>http://localhost:1313/categories/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B6%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0/</link>
+    <description>Recent content from xiaowenji&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>xxx@example.com (xiaowenji)</managingEditor>
+    <webMaster>xxx@example.com (xiaowenji)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/categories/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B6%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Mad</title>
+      <link>http://localhost:1313/post/mad/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <author>xxx@example.com (xiaowenji)</author>
+      <guid>http://localhost:1313/post/mad/</guid>
+      <description>
+        <![CDATA[<h1>Mad</h1><p>Author: xiaowenji(xxx@example.com)</p>
+        
+          <p>Solving ethernaut challenges!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">whoami</span>
+</span></span></code></pre></div>
+        
+        <hr><p>Published on 2023-03-15 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2023-03-15</p>]]>
+      </description>
+      
+        <category>キャプチャー・ザ・フラッグ</category>
+      
+    </item>
+    
+  </channel>
+</rss>

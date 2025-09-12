@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Htb on xiaowenji&#39;s blog</title>
+    <link>http://localhost:1313/categories/htb/</link>
+    <description>Recent content from xiaowenji&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>ctfxiaowenji@gmail.com (xiaowenji)</managingEditor>
+    <webMaster>ctfxiaowenji@gmail.com (xiaowenji)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Fri, 12 Sep 2025 12:00:00 -0400</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/categories/htb/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Paper</title>
+      <link>http://localhost:1313/post/paper/</link>
+      <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
+      <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
+      <guid>http://localhost:1313/post/paper/</guid>
+      <description>
+        <![CDATA[<h1>Paper</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
+        
+          <h2 id="recon">
+<a class="header-anchor" href="#recon"></a>
+Recon
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sC -sV -p- 10.10.11.143 -v
+</span></span></code></pre></div><figure><img src="/images/htb/paper/nmap.png"
+    alt="nmap scan output">
+</figure>
+
+<hr>
+<h2 id="enumeration">
+<a class="header-anchor" href="#enumeration"></a>
+Enumeration
+</h2><h1 id="web-port-80">
+<a class="header-anchor" href="#web-port-80"></a>
+Web (port 80)
+</h1><p>We did not find anything manually with tools such as <code>ffuf</code>. Following a suggestion from ChatGPT, We used <code>whatweb</code> to attempt to obtain useful information.</p>
+<p>As part of the output, a domain was discovered near the end:</p>
+<figure><img src="/images/htb/paper/whatweb.png"
+    alt="whatweb output showing discovered domain office.paper">
+</figure>
+
+<pre tabindex="0"><code>office.paper
+</code></pre><p>We are dealing with a WordPress instance.</p>
+<figure><img src="/images/htb/paper/image1.png"
+    alt="screenshot indicating WordPress instance or domain references">
+</figure>
+
+<p>Reading the server content, We found a message that provided a hint indicating a possible vulnerability.</p>
+        
+        <hr><p>Published on 2025-09-12 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
+      </description>
+      
+        <category>htb</category>
+      
+    </item>
+    
+  </channel>
+</rss>

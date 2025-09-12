@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活 on xiaowenji&#39;s blog</title>
+    <link>http://localhost:1313/categories/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content from xiaowenji&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>xxx@example.com (xiaowenji)</managingEditor>
+    <webMaster>xxx@example.com (xiaowenji)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Whoami</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>xxx@example.com (xiaowenji)</author>
+      <guid>http://localhost:1313/post/test/</guid>
+      <description>
+        <![CDATA[<h1>Whoami</h1><p>Author: xiaowenji(xxx@example.com)</p>
+        
+          
+        
+        <hr><p>Published on 2025-09-11 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
+      </description>
+      
+        <category>生活</category>
+      
+    </item>
+    
+  </channel>
+</rss>

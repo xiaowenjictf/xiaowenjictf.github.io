@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary on xiaowenji&#39;s blog</title>
+    <link>http://localhost:1313/tags/binary/</link>
+    <description>Recent content from xiaowenji&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>xxx@example.com (xiaowenji)</managingEditor>
+    <webMaster>xxx@example.com (xiaowenji)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 15 Mar 2025 11:00:00 -0700</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/binary/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Meu post</title>
+      <link>http://localhost:1313/post/beautiful/</link>
+      <pubDate>Sat, 15 Mar 2025 11:00:00 -0700</pubDate>
+      <author>xxx@example.com (xiaowenji)</author>
+      <guid>http://localhost:1313/post/beautiful/</guid>
+      <description>
+        <![CDATA[<h1>Meu post</h1><p>Author: xiaowenji(xxx@example.com)</p>
+        
+          
+        
+        <hr><p>Published on 2025-03-15 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-03-15</p>]]>
+      </description>
+      
+        <category>CTF</category><category>Writeup</category>
+      
+    </item>
+    
+  </channel>
+</rss>

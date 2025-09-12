@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crypto on xiaowenji&#39;s blog</title>
+    <link>http://localhost:1313/tags/crypto/</link>
+    <description>Recent content from xiaowenji&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>ctfxiaowenji@gmail.com (xiaowenji)</managingEditor>
+    <webMaster>ctfxiaowenji@gmail.com (xiaowenji)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Fri, 12 Sep 2025 12:00:00 -0400</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/crypto/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Nahamcon 2025 write up</title>
+      <link>http://localhost:1313/post/nahamcom/</link>
+      <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
+      <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
+      <guid>http://localhost:1313/post/nahamcom/</guid>
+      <description>
+        <![CDATA[<h1>Nahamcon 2025 write up</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
+        
+          <h1 id="challenge-overview">
+<a class="header-anchor" href="#challenge-overview"></a>
+Challenge Overview
+</h1><p>The Crypto Clock challenge from Nahamcon 2025 provides an encrypted flag and some source code that generates a pseudo-random key using the current timestamp as a seed. The goal is to recover the original flag by replicating the key generation logic.</p>
+<h2 id="initial-analysis">
+<a class="header-anchor" href="#initial-analysis"></a>
+Initial Analysis
+</h2><p>We are given the following encrypted flag:</p>
+<figure><img src="/images/ctfs/nahamcon2025/nc.png"
+    alt="nc output">
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> flag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a6717b705265d3b9d810736c72b27bc8bcc5d245e68ccada61f8c16277d5a8bb5655db3cc7d0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(len(flag))
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">76</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(len(flag)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">38.0</span>
+</span></span></code></pre></div><blockquote>
+<p>The hex-encoded string is 76 characters long, which corresponds to 38 bytes.</p>
+        
+        <hr><p>Published on 2025-09-12 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+  </channel>
+</rss>
