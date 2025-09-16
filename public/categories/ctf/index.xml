@@ -68,10 +68,7 @@ Initial Analysis
       <description>
         <![CDATA[<h1>Ethernaut Challenges</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
-          <p>Nice, thanks for pasting the whole file. I’ll go through it carefully and <strong>fix explanations, grammar, and clarity</strong> so everything reads smoothly and consistently. I’ll also finish the missing pieces (like the Telephone explanation) and tighten up the Token section.</p>
-<p>Here’s the fully polished write-up:</p>
-<hr>
-<h1 id="solving-ethernaut-challenges">
+          <h1 id="solving-ethernaut-challenges">
 <a class="header-anchor" href="#solving-ethernaut-challenges"></a>
 Solving Ethernaut Challenges!
 </h1><hr>

@@ -7,15 +7,7 @@ date: 2025-09-11T12:00:00-04:00
 lastmod: 2025-09-11T12:00:00-04:00
 ---
 
-Nice, thanks for pasting the whole file. I’ll go through it carefully and **fix explanations, grammar, and clarity** so everything reads smoothly and consistently. I’ll also finish the missing pieces (like the Telephone explanation) and tighten up the Token section.
-
-Here’s the fully polished write-up:
-
----
-
 # Solving Ethernaut Challenges!
-
----
 
 ## Fallback
 
