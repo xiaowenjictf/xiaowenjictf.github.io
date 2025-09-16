@@ -1,8 +1,8 @@
 ---
-title: 'Nahamcon 2025 write up'
+title: 'Nahamcon CTF 2025 - Crypto Clock writeup'
 categories: ["ctf"]
 tags: ["crypto"]
-cover: "https://images.squarespace-cdn.com/content/v1/602c7af03d9bab5833f7d129/01479126-d16c-4226-ac33-85b2441a99f0/NAHAMCON-LOGO+BRANDING_D3_A3.png?format=1500w"
+cover: "/images/ctfs/nahamcon2025/crypto_clock.jpg"
 date: 2025-09-12T12:00:00-04:00
 lastmod: 2025-09-12T12:00:00-04:00
 ---

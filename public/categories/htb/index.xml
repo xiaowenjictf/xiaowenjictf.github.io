@@ -33,7 +33,7 @@
           <h2 id="recon">
 <a class="header-anchor" href="#recon"></a>
 Recon
-</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sC -sV -p- 10.10.11.143 -v
+</h2><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmap -sC -sV -p- 10.10.11.143 -v
 </span></span></code></pre></div><figure><img src="/images/htb/paper/nmap.png"
     alt="nmap scan output">
 </figure>
@@ -51,8 +51,8 @@ Web (port 80)
     alt="whatweb output showing discovered domain office.paper">
 </figure>
 
-<pre tabindex="0"><code>office.paper
-</code></pre><p>We are dealing with a WordPress instance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">office.paper
+</span></span></code></pre></div><p>We are dealing with a WordPress instance.</p>
 <figure><img src="/images/htb/paper/image1.png"
     alt="screenshot indicating WordPress instance or domain references">
 </figure>

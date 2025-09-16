@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = "xiaowenji's blog"
 theme = "reimu"
 
+[markup.highlight]
+guessSyntax = true
+noClasses = false
+
 [caches]
   [caches.images]
     dir = ":cacheDir/images"

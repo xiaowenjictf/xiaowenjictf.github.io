@@ -22,13 +22,13 @@
     
 
     <item>
-      <title>Nahamcon 2025 write up</title>
+      <title>Nahamcon CTF 2025 - Crypto Clock writeup</title>
       <link>https://xiaowenjictf.github.io/post/nahamcom/</link>
       <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
       <guid>https://xiaowenjictf.github.io/post/nahamcom/</guid>
       <description>
-        <![CDATA[<h1>Nahamcon 2025 write up</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
+        <![CDATA[<h1>Nahamcon CTF 2025 - Crypto Clock writeup</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
           <h1 id="challenge-overview">
 <a class="header-anchor" href="#challenge-overview"></a>
@@ -42,11 +42,11 @@ Initial Analysis
     alt="nc output">
 </figure>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> flag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a6717b705265d3b9d810736c72b27bc8bcc5d245e68ccada61f8c16277d5a8bb5655db3cc7d0&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(len(flag))
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">76</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(len(flag)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">38.0</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;a6717b705265d3b9d810736c72b27bc8bcc5d245e68ccada61f8c16277d5a8bb5655db3cc7d0&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="mi">76</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mf">38.0</span>
 </span></span></code></pre></div><blockquote>
 <p>The hex-encoded string is 76 characters long, which corresponds to 38 bytes.</p>
         
