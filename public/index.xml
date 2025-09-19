@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on xiaowenji&#39;s blog</title>
-    <link>https://xiaowenjictf.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content from xiaowenji&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -15,20 +15,20 @@
     <lastBuildDate>Fri, 12 Sep 2025 12:00:00 -0400</lastBuildDate>
     
     
-    <atom:link href="https://xiaowenjictf.github.io/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
     
 
     <item>
-      <title>Paper</title>
-      <link>https://xiaowenjictf.github.io/post/paper/</link>
+      <title>Paper - HTB Writeup</title>
+      <link>http://localhost:1313/post/paper/</link>
       <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
-      <guid>https://xiaowenjictf.github.io/post/paper/</guid>
+      <guid>http://localhost:1313/post/paper/</guid>
       <description>
-        <![CDATA[<h1>Paper</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
+        <![CDATA[<h1>Paper - HTB Writeup</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
           <h2 id="recon">
 <a class="header-anchor" href="#recon"></a>
@@ -59,7 +59,7 @@ Web (port 80)
 
 <p>Reading the server content, We found a message that provided a hint indicating a possible vulnerability.</p>
         
-        <hr><p>Published on 2025-09-12 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
+        <hr><p>Published on 2025-09-12 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
       </description>
       
         <category>htb</category>
@@ -70,10 +70,10 @@ Web (port 80)
 
     <item>
       <title>Nahamcon CTF 2025 - Crypto Clock writeup</title>
-      <link>https://xiaowenjictf.github.io/post/nahamcom/</link>
+      <link>http://localhost:1313/post/nahamcom/</link>
       <pubDate>Fri, 12 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
-      <guid>https://xiaowenjictf.github.io/post/nahamcom/</guid>
+      <guid>http://localhost:1313/post/nahamcom/</guid>
       <description>
         <![CDATA[<h1>Nahamcon CTF 2025 - Crypto Clock writeup</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
@@ -97,7 +97,7 @@ Initial Analysis
 </span></span></code></pre></div><blockquote>
 <p>The hex-encoded string is 76 characters long, which corresponds to 38 bytes.</p>
         
-        <hr><p>Published on 2025-09-12 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
+        <hr><p>Published on 2025-09-12 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-12</p>]]>
       </description>
       
         <category>ctf</category>
@@ -108,18 +108,17 @@ Initial Analysis
 
     <item>
       <title>Ethernaut Challenges</title>
-      <link>https://xiaowenjictf.github.io/post/ethernaut/</link>
+      <link>http://localhost:1313/post/ethernaut/</link>
       <pubDate>Thu, 11 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
-      <guid>https://xiaowenjictf.github.io/post/ethernaut/</guid>
+      <guid>http://localhost:1313/post/ethernaut/</guid>
       <description>
         <![CDATA[<h1>Ethernaut Challenges</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
           <h1 id="solving-ethernaut-challenges">
 <a class="header-anchor" href="#solving-ethernaut-challenges"></a>
 Solving Ethernaut Challenges!
-</h1><hr>
-<h2 id="fallback">
+</h1><h2 id="fallback">
 <a class="header-anchor" href="#fallback"></a>
 Fallback
 </h2><h3 id="challenge-code">
@@ -165,7 +164,7 @@ Challenge Code
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>To solve, we contribute a small amount so our contribution is &gt; 0. Then we send ether directly to the contract, triggering <code>receive()</code>, which sets us as the new owner. Finally, we call <code>withdraw()</code> to drain the contract.</p>
         
-        <hr><p>Published on 2025-09-11 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
+        <hr><p>Published on 2025-09-11 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
       </description>
       
         <category>ctf</category>

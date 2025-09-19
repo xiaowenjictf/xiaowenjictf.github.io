@@ -1,8 +1,8 @@
 - name: HTB Account
   url: https://app.hackthebox.com/users/2062260
   desc: ハック・ザ・ボックス
-  image: https://yt3.googleusercontent.com/2Tq9apgiHSV7NrCKzgRMbm-AABWJJXuyWMY_7MpQlVdvemqJRWcGegVq0G4e9xHCl8HcbQs_Ag=s900-c-k-c0x00ffffff-no-rj
+  image: "avatar/htb_icon.jpg"
 - name: HC Account
   url: https://app.hackingclub.com/profile/user/24906
   desc: ハッキングクラブ
-  image: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/hmmwmcf0jq22qyiev24k
+  image: "avatar/hc_icon.png"

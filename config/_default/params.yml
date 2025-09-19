@@ -14,9 +14,6 @@ menu:
   - name: about
     url: "about"
     icon:
-  - name: friend
-    url: "friend"
-    icon:
 
 mainSections: ["post"]
 # 年，月，日及时间的格式化样式
@@ -31,7 +28,7 @@ email: ctfxiaowenji@gmail.com
 description: "面白い"
 subtitle: "A curious mind exploring cybersecurity and blockchain smart contracts."
 
-banner: "images/my-banner.webp"
+banner: "images/test-banner.png"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
@@ -46,7 +43,7 @@ banner_srcset:
     - src: "images/my-banner.webp"
       media: "(min-width: 800px)"
 
-avatar: "test.webp"
+avatar: "pfp.png"
 
 # Control the display of the post cover
 # If not set, the banner image will be displayed by default
@@ -136,7 +133,6 @@ social:
 widgets:
   - category
   - tag
-  - tagcloud
   - recent_posts
 
 # Widget behavior
@@ -550,11 +546,11 @@ home_categories:
   enable: true
   content:
     - categories: "HTB"
-      cover: images/dark-chess.jpg
+      cover: images/dark-cloud.jpg
     - categories: "HC"
-      cover: images/dark-chess.jpg
+      cover: images/dark-cloud.jpg
     - categories: "CTF"
-      cover: images/dark-chess.jpg
+      cover: images/dark-cloud.jpg
 
 
 ########################################

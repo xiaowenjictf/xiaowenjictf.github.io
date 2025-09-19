@@ -3,8 +3,8 @@ title: 'Nahamcon CTF 2025 - Crypto Clock writeup'
 categories: ["ctf"]
 tags: ["crypto"]
 cover: "/images/ctfs/nahamcon2025/crypto_clock.jpg"
-date: 2025-09-12T12:00:00-04:00
-lastmod: 2025-09-12T12:00:00-04:00
+date: 2025-09-01
+lastmod: 2025-09-01
 ---
 
 # Challenge Overview

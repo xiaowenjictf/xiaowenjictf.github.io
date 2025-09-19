@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on xiaowenji&#39;s blog</title>
-    <link>https://xiaowenjictf.github.io/tags/blockchain/</link>
+    <link>http://localhost:1313/tags/blockchain/</link>
     <description>Recent content from xiaowenji&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Thu, 11 Sep 2025 12:00:00 -0400</lastBuildDate>
     
     
-    <atom:link href="https://xiaowenjictf.github.io/tags/blockchain/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,18 +23,17 @@
 
     <item>
       <title>Ethernaut Challenges</title>
-      <link>https://xiaowenjictf.github.io/post/ethernaut/</link>
+      <link>http://localhost:1313/post/ethernaut/</link>
       <pubDate>Thu, 11 Sep 2025 12:00:00 -0400</pubDate>
       <author>ctfxiaowenji@gmail.com (xiaowenji)</author>
-      <guid>https://xiaowenjictf.github.io/post/ethernaut/</guid>
+      <guid>http://localhost:1313/post/ethernaut/</guid>
       <description>
         <![CDATA[<h1>Ethernaut Challenges</h1><p>Author: xiaowenji(ctfxiaowenji@gmail.com)</p>
         
           <h1 id="solving-ethernaut-challenges">
 <a class="header-anchor" href="#solving-ethernaut-challenges"></a>
 Solving Ethernaut Challenges!
-</h1><hr>
-<h2 id="fallback">
+</h1><h2 id="fallback">
 <a class="header-anchor" href="#fallback"></a>
 Fallback
 </h2><h3 id="challenge-code">
@@ -80,7 +79,7 @@ Challenge Code
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>To solve, we contribute a small amount so our contribution is &gt; 0. Then we send ether directly to the contract, triggering <code>receive()</code>, which sets us as the new owner. Finally, we call <code>withdraw()</code> to drain the contract.</p>
         
-        <hr><p>Published on 2025-09-11 at <a href='https://xiaowenjictf.github.io/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
+        <hr><p>Published on 2025-09-11 at <a href='http://localhost:1313/'>xiaowenji's blog</a>, last modified on 2025-09-11</p>]]>
       </description>
       
         <category>ctf</category>
