@@ -2,7 +2,7 @@
 title: Nahamcon CTF 2025 - Crypto Clock 
 published: 2025-09-01
 description: Crypto Clock challenge writeup
-tags: [crypto]
+tags: [Crypto]
 category: CTF
 image: "images/cover.jpg"
 draft: false
