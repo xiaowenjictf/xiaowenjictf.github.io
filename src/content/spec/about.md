@@ -1,8 +1,12 @@
 # About Me
 
-Hi, I’m Luiz, 23, a cybersecurity enthusiast who lives for Hack The Box, Hacking Club, and weekly CTF training.  
+Hi, I’m Luiz, 23 - a cybersecurity enthusiast focused on web security and blockchain, and a team lead at hoS, Brazil’s #1 team on Hack The Box.
 
-I used to dive deep into cryptography, but now my main focus is web security and blockchain. I hold certifications like:
+At hoS, I help lead an international crew of hackers, pentesters, software engineers, exploit developers and CTF grinders. We compete weekly, share knowledge internally, and build our own infrastructure and tools for collaboration and research.
+
+I started out deep into cryptography, and today my work is mainly centered around offensive security, especially web exploitation and smart contract security.
+
+I hold certifications such as:
 
 - PT1 - TryHackMe Junior Penetration Tester
 - DCPT - Desec Certified Penetration Tester
