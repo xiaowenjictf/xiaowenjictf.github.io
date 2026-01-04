@@ -1,6 +1,6 @@
 # About Me
 
-Hi, I’m Luiz, 23 - a cybersecurity enthusiast focused on web security and blockchain, and a team lead at hoS, Brazil’s #1 team on Hack The Box.
+Hi, I’m Luiz, 23 - a cybersecurity enthusiast focused on web security and blockchain, and a team lead at [hackersOnSteroids](https://hackersonsteroids.org/), Brazil’s #1 team on Hack The Box.
 
 At hoS, I help lead an international crew of hackers, pentesters, software engineers, exploit developers and CTF grinders. We compete weekly, share knowledge internally, and build our own infrastructure and tools for collaboration and research.
 
