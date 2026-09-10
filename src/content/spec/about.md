@@ -1,6 +1,6 @@
 # About Me
 
-Hi, I’m Luiz, 23 - a cybersecurity enthusiast focused on web security and blockchain, and a team lead at [hackersOnSteroids](https://hackersonsteroids.org/), Brazil’s #1 team on Hack The Box.
+Hi, I’m Luiz, 24 - a cybersecurity enthusiast focused on web security and blockchain, and a team lead at [hackersOnSteroids](https://hackersonsteroids.org/), Brazil’s #1 team on Hack The Box.
 
 At hoS, I help lead an international crew of hackers, pentesters, software engineers, exploit developers and CTF grinders. We compete weekly, share knowledge internally, and build our own infrastructure and tools for collaboration and research.
 
@@ -15,5 +15,8 @@ I hold certifications such as:
 - eJPT - eLearnSecurity Junior Penetration Tester
 - CWHI - CrowSec Web Hacking Initial
 - AD-RTS - Active Directory Red Team Specialist
+- CJCA - Certified Junior Cybersecurity Associate
+- CPTS - Certified Penetration Testing Specialist
+- CRTO - Certified Red Team Operator
 
 When I’m not hacking, you’ll probably find me playing chess ♞, exploring new tech, or geeking out over security reports.
