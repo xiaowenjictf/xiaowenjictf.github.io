@@ -9,6 +9,10 @@ image: "images/cover.png"
 draft: false
 ------------
 
+## Summary
+
+Ronin starts with an anonymously accessible FTP server exposing a Roundcube backup directory. The backup's `config.inc.php` leaks a cleartext database password that also works for the live Roundcube instance on port 80. The running version (Roundcube 1.6.10) is vulnerable to CVE-2025-49113, which gives command execution as `www-data`. From there, the current Roundcube config provides valid database credentials, and the `session` table stores an encrypted password for the user `leo`. Decrypting it with the `des_key` from the config recovers `leo`'s SSH password. Privilege escalation abuses a root cron job that runs `tar` with a wildcard inside `leo`'s mail directory, exploited through `tar` checkpoint actions to obtain a SUID root shell.
+
 ## Recon
 
 ### Initial Enumeration
