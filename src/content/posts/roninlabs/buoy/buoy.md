@@ -1,5 +1,4 @@
 ---
-
 title: Buoy - Ronin66 Machine
 published: 2026-09-09
 description: Buoy writeup

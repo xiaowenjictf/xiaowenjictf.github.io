@@ -1,5 +1,4 @@
 ---
-
 title: Recovery - Ronin66 Machine
 published: 2026-09-10
 description: Recovery writeup
