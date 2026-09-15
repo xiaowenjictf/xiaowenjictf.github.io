@@ -460,12 +460,7 @@ The `SeImpersonatePrivilege` privilege was enabled, providing a path to SYSTEM t
 
 ### SeImpersonatePrivilege Abuse with GodPotato
 
-We used the MSSQL client to upload `GodPotato` to the target:
-
-```shell id="f44g8r"
-➜  Matrioska
-https://github.com/BeichenDream/GodPotato/releases/tag/V1.20
-```
+We used the MSSQL client to upload [GodPotato](https://github.com/BeichenDream/GodPotato/releases/tag/V1.20) to the target:
 
 ```shell id="69eq5m"
 SQL (sa  dbo@master)> upload /root/tools/GodPotato-NET4.exe C:/Users/Public/GodPotato-NET4.exe
