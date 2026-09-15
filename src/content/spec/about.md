@@ -20,5 +20,6 @@ I hold certifications such as:
 - CJCA - Certified Junior Cybersecurity Associate
 - CPTS - Certified Penetration Testing Specialist
 - CRTO - Certified Red Team Operator
+- C-APIPen - Certified API Pentester
 
 When I’m not hacking, you’ll probably find me playing chess ♞, exploring new tech, or geeking out over security reports.
